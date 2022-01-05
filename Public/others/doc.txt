@@ -1,0 +1,112 @@
+api creation
+
+1- admin -
+  {
+    A-aduser=>
+    (fetch searched users(get) create user (Post) / delete user (delete) / user details manipulate(patch) / user status (put).)
+    B-directory =>
+    (fetch search directory(get) / create directory (post) / delete directory (delete) / Rename directory (patch)).
+    C- admin
+    (update details(patch) get details(login) (post)) / logout(delete)
+    D-ticket
+    (fetch ticket(get) /delete ticket(delete))  
+  }
+2- user - 
+    {
+        A- ticket=>
+        (create ticket(post) / update ticket (put) / fetch & search ticket(get))
+        
+        B - user=>
+        (update profile details(put) / fetch all tickets raised by him / her (get) / get details(login) (post)) / logout(delete))
+    }
+  
+  
+  
+    
+// API structure to manage data
+ 
+ for admin 
+ {
+    aduser
+    {
+        name
+        email
+        password
+        mobile no.
+        user_status = INA(default)
+    }
+    
+    directory
+    {
+        name
+    }
+    
+    admin
+    {
+        name
+        email
+        password 
+    }
+ }
+ 
+ 
+  
+  for user
+  {
+    ticket
+    {
+        user_email
+        id
+        name
+        detail
+        stage
+        assignee
+        tickets_derectory
+        Tickets_close_time
+        tickets_priority => (P1-P5)
+        attachment
+        {
+           at_ticket
+           at_user
+           at_name
+           at_size
+           at_ext
+        }
+        comments
+        {
+            cm_ticket
+            cm_user
+            cm_msg
+            cm_date
+            cm_time
+        }   
+    }
+    
+    user
+    {
+        name
+        email   
+        password
+        mobile no
+        tickets
+        {
+            All tickets
+        }
+    }
+ }
+
+
+
+//page creation
+
+admin.php -> admin profile related all querry
+user.php -> user profile related all querry
+tickets.php -> tickets related all querry
+directory.php -> directory related all querry
+aduser.php -> user updation or creation by admin.
+
+ 
+ 
+ 
+    
+    

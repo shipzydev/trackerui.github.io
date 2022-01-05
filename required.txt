@@ -1,0 +1,26 @@
+username
+password -----> js {validate} ----> call ajax funct ---->api (request)-
+
+---> api (response) ------> js (response json data) ----->decode in js 
+
+object and display in html page
+
+
+
+application flow for user
+open index.php > dashboard  when search > tickets 
+                   |
+                   card directory > directorypage > tickets
+                    |
+                    createoption > createticket after submit > tickets
+
+
+For admin
+open index.php > dashboard > user > usertablerecords 
+                    |
+                    directory>directorytable
+                    |
+                    ticket>ticket table (only showing closed tickets. and delete)
+                    
+
+AJAX WITH JQUERY

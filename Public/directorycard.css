@@ -1,0 +1,98 @@
+body
+{
+    background-color: white;
+    margin:0px;
+    padding-left: 0;
+    background-size: cover;
+    background-image: url("../Public/images/wire.jpg");
+}
+
+.header
+{
+    height: 45px;
+    background-color: black;
+    padding-top: 5px;
+}
+
+.createbtn
+{
+    height: 35px;
+    background-color: green;
+    color: white;
+    float: right;
+}
+
+.para1
+{
+    font-size: 25px;
+    color: wheat;
+    text-align: left;
+    font-family: sans-serif;
+}
+
+
+a
+{
+    text-decoration: none;
+}
+
+.para2
+{
+    font-size: 25px;
+    color: wheat;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.para3
+{
+    float: right;
+    background-color: transparent;
+    color: yellowgreen;
+    font-size: 25px;
+    border: none;
+}
+
+.middlediv
+{
+    height: 600px;
+}
+.logout
+{
+    float: right;
+    margin-left: 10px;
+    border: 2px solid;
+    height: 37px;
+}
+
+.heading3
+{
+    color: white;
+}
+
+.cardmiddle
+{
+    margin-top: 5px;  
+}
+
+.heading-three  
+{
+    text-align: center;
+    color: white;
+}
+.tablebox
+{
+    height: 400px;
+    padding: 0%;
+}
+.testing
+{
+    margin-top: 70px;
+}
+
+.search
+{
+    border: 2px solid limegreen;
+    color: limegreen;
+    
+}
