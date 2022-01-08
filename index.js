@@ -11,8 +11,8 @@ $(document).ready(function() {
         var dataj=JSON.stringify(arr);
         $.ajax({
             url:"https://shipzy.site/api/adminapi.php",
-            data:dataj,
             type:POST,
+            data:dataj,
             success:function(data)
             {
                 $('#mydata').html(JSON.stringify(data));
