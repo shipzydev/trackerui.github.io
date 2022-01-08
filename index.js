@@ -15,7 +15,7 @@ $(document).ready(function() {
             type:POST,
             success:function(data)
             {
-                $(#mydata).html(JSON.stringify(data));
+                $('#mydata').html(JSON.stringify(data));
             }
         });
     });
