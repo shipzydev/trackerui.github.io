@@ -9,6 +9,19 @@ body
     background-image: url("images/indexbg.jpg");
     background-size: cover;
 }
+
+.heading1
+{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.Form-div
+{
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+}
+
 .container_box
 {
     margin-top: 100px;
