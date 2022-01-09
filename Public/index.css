@@ -8,6 +8,7 @@ body
    /*  background-image: url("Public/images/indexbg.jpg"); */
     background-image: url("images/indexbg.jpg");
     background-size: cover;
+    height: auto;
 }
 
 .heading1
@@ -79,12 +80,10 @@ body
     border: none; outline-color:  whitesmoke;
     box-shadow: 0 1px 1px rgba(255, 255, 255);
 }
-
-#input-box::placeholder
+#password::placeholder
 {
-    color: whitesmoke;
+    color: gray;
 }
-
 .anchor-fp
 {
     text-decoration: none;
