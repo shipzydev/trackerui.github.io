@@ -2,27 +2,35 @@ $(document).ready(function() {
     //function to load data here from adminuser Api
    // $('#mydata').load("https://shipzy.xyz/Src/Admin/adminpage.html");
     $('#btnUser').click(function(){
-        var email=$('username').val();
-        var password=$('password').val();
+        var email=$('#username').val();
+        var password=$('#password').val();
         var arr={
-            username:email,
+            email:email,
             password:password
         }
-        var dataj=JSON.stringify(arr);
         $.ajax({
             url:"https://shipzy.site/api/adminapi.php",
-            headers: {'Content-Type':'application/json'},
+            contentType:'application/json',
             type:'POST',
-            data:dataj,
-            success:function(data)
-            {
-                $('#mydata').html(JSON.stringify(data));
-            }
-        });
+            data:JSON.stringify(arr),
+        }).always(function(res)
+        {
+            console.log(res);
+            $('#mydata').html(JSON.stringify(res));
+        })
     });
 
     // btnadmin call that and find session
     $('#btnAdmin').click(function(){
-        $('#mydata').load('https://shipzy.site/other/test.php');
+        $.ajax({
+            url:"https://shipzy.site/api/aduserapi.php",
+            contentType:'application/json',
+            headers:{'Authorization':'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjEiLCJuYW1lIjoic2FjaGluIiwiZW1haWwiOiJzYWNoaW5AZ21haWwuY29tIiwidGltZSI6IjA4XC8wMVwvMjIgMTE6MzggOTc4MSIsInJlc3VsdCI6InRydWUiLCJQSFBTRVNTSUQiOiJkMm43cHJ0cTJzdXFrYzB2c2ZkbW00NWticyJ9.4ZD2FHFb4SA_S41I06J1EFv4tey0n3k2YhIs0u4fAXM'},
+            type:'GET',
+        }).always(function(res)
+        {
+            console.log(res);
+            $('#mydata').html(JSON.stringify(res));
+        })
     });
 });
